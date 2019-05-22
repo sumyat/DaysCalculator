@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class DaysLateCalculatorMain {
     //Test File which has test dates
-    private static String FILENAME = "abc.txt";
+    private static String FILENAME = "input.txt";
 
     public static void main(String[] args) throws IOException {
 

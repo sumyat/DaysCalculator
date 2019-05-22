@@ -15,3 +15,13 @@ dependencies {
         "org.assertj:assertj-core:3.11.1"
     )
 }
+
+task installRunConfiguration(type: Copy) {
+    from file("${project.projectDir}/config/runConfigurations/Days_Calculator.xml")
+
+    into file("${project.rootDir}/.idea/runConfigurations")
+
+    doLast {
+        println('Imported Run Configurations')
+    }
+}
