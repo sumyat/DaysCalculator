@@ -13,9 +13,9 @@ days difference. Then, it will print out the result to the console.
 ## Import Project in Intellij
 - From Main Menu of Intellij, File > Open
 - Go to the file location, choose build.gradle and click `OK`.
-
-## Build
-- Under the project direction, run `gradle build`.
+- Specify Gradle Home location
+On Mac: /usr/local/opt/gradle/libexec in case you installed it via brew.
+For Windows: specify the path where you installed Gradle.
 
 ## Install Intellij RunConfiguration
 - Install configuration by gradle task `gradle installRunConfiguration`.
