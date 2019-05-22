@@ -1,16 +1,19 @@
 package com.demo.utils;
 
 import org.junit.Test;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
+
+import java.io.FileNotFoundException;
 
 public class FileUtilsTest {
 
-    @Test
-    public void testFileNotFound() {
+    @Test(expected = FileNotFoundException.class)
+    public void shouldThrowFileNotFoundException() throws FileNotFoundException {
+        FileUtils.getFileFromResources("abc.txt");
     }
 
     @Test
-    public void testFile() {
+    public void shouldReadFileSuccessfully() throws FileNotFoundException {
+        FileUtils.getFileFromResources("success-test.txt");
     }
 
 }
