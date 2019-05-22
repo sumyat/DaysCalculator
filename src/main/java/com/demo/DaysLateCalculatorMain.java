@@ -1,7 +1,6 @@
 package com.demo;
 
 import com.demo.model.CustomDate;
-import com.demo.model.CustomLog;
 import com.demo.utils.CalendarUtils;
 import com.demo.utils.FileUtils;
 
@@ -10,12 +9,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static com.demo.model.CustomLog.LogBuilder.aLog;
-
 public class DaysLateCalculatorMain {
     //Test File which has test dates
     private static String FILENAME = "abc.txt";
-    public CustomLog.LogBuilder logBuilder = aLog();
 
     public static void main(String[] args) throws IOException {
 
